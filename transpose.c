@@ -15,7 +15,7 @@ for(i=0;i<row;i++){
         if(i>j){
             int t=arr[i][j];
             arr[i][j]=arr[j][i];
-            arr[i][j]=t;
+            arr[j][i]=t;
         }
     }
 }
