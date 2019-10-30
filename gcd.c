@@ -1,16 +1,30 @@
-#include <stdio.h>
-int main()
-{
-    int n1, n2, i, gcd;
-    printf("Enter two integers: ");
-    scanf("%d %d", &n1, &n2);
-    while(n1!=n2)
-    {
-        if(n1 > n2)
-            n1 -= n2;
-        else
-            n2 -= n1;
-    }
-    printf("GCD = %d",n1);
-    return 0;
-}
+// C++ program to find GCD of two numbers
+#include<stdio.h>
+// Recursive function to return gcd of a and b 
+int gcd(int a, int b) 
+{ 
+	// Everything divides 0 
+	if (a == 0) 
+	return b; 
+	if (b == 0) 
+	return a; 
+
+	// base case 
+	if (a == b) 
+		return a; 
+
+	// a is greater 
+	if (a > b) 
+		return gcd(a-b, b); 
+	return gcd(a, b-a); 
+} 
+
+// Driver program to test above function 
+int main() 
+{ 
+	int a,b;
+    scanf("%d %d",&a,&b);
+	printf("GCD of %d and %d is",a,b,gcd(a,b));
+    //cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd(a, b); 
+	return 0; 
+} 
