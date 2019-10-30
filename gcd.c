@@ -22,7 +22,7 @@ int main()
 { 
 	int a,b;
         scanf("%d %d",&a,&b);
-	printf("GCD of %d and %d is",a,b,gcd(a,b));
+	printf("GCD of %d and %d is %d",a,b,gcd(a,b));
      
 	return 0; 
 } 
