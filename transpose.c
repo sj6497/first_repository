@@ -11,7 +11,7 @@ for(i=0;i<row;i++){
 }
 
 for(i=0;i<row;i++){
-    for(j=0;j<col;j++){
+    for( j=0;j<col;j++){
         arr1[j][i]=arr[i][j];
     }
 }
