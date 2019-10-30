@@ -6,7 +6,7 @@ scanf("%d %d",&row,&col);
 int arr[row][col];
 for(i=0;i<row;i++){
     for(j=0;j<col;j++){
-        scanf("%d 3%d",&arr[i][j]);
+        scanf("%d",&arr[i][j]);
     }
 }
 
