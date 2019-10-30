@@ -20,7 +20,7 @@ int gcd(int a, int b)
  
 int main() 
 { 
-	int ,b;
+	
         scanf("%d %d",&a,&b);
 	printf("GCD of %d and %d is %d",a,b,gcd(a,b));
      
